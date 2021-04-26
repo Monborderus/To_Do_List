@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <main class="main">
+        <div class="form-bubble">
+          <span class="header-to-do">To Do List</span>
+          <form class="form" action="#" onsubmit="return false;">
+            <input type="text" class="input" placeholder="Add new task" autofocus onsubmit="return false;"/>
+            <button class="add" onsubmit="return false;">+</button>
+          </form>
+
+          <ul class="task-list"></ul>
+
+          <nav class="nav">
+            <button data-status="all" class="all">Select all</button>
+            <button data-status="active" class="active">Select active</button>
+            <button data-status="comleted" class="comleted">Select completed</button>
+          </nav>
+        </div>
+
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
